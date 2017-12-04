@@ -1,0 +1,45 @@
+{
+  "name": "theatre_project",
+  "version": "1.0.0",
+  "description": "Mock website for an imaginary production of Sophocles' Antigone. Intro to Theatre Final Project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"System ready...\"",
+    "build": "webpack --watch",
+    "precompile": "handlebars ./src/templates/header.handlebars ./src/templates/footer.handlebars -f ./src/javascript/templates.js -c -k each -k if -k unless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jM5557/AntigonePlay.git"
+  },
+  "keywords": [
+    "antigone",
+    "project",
+    "javier",
+    "minchala"
+  ],
+  "author": "Javier Minchala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jM5557/AntigonePlay/issues"
+  },
+  "homepage": "https://github.com/jM5557/AntigonePlay#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.5",
+    "node-sass": "^4.7.2",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  }
+}
